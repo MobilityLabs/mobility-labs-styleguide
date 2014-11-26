@@ -15,7 +15,8 @@
     <!-- endbuild-->
     <!-- build:js js/vendor/modernizr.min.js-->
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild-->
+    <!-- endbuild--><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
   </head>
   <body>
     <div class="fixed contain-to-grid"> 
@@ -26,7 +27,7 @@
           </li>
           <!--Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
           -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
         <section class="top-bar-section">
           <!--Right Nav Section 
@@ -44,24 +45,94 @@
       </nav>
     </div>
     <div class="row">
-      <div class="small-12 small-centered medium-10 medium-centered large-12 large-centered columns">
+      <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
         <h1>Typography</h1>
-        <hr>
+        <p>Sans Serif & Serif heading styles, and paragraph styles.</p>
+        <hr><br>
         <h1>h1 Sans serif</h1>
         <h2>h2 Sans serif</h2>
         <h3>h3 Sans serif</h3>
         <h4>h4 Sans serif</h4>
         <h5>h5 Sans serif</h5>
-        <h6>h6 Sans serif</h6>
-        <hr>
+        <h6>h6 Sans serif</h6><br>
         <h1 class="serif">h1 Serif</h1>
         <h2 class="serif">h2 Serif</h2>
         <h3 class="serif">h3 Serif</h3>
         <h4 class="serif">h4 Serif</h4>
         <h5 class="serif">h5 Serif</h5>
-        <h6 class="serif">h6 Serif</h6>
+        <h6 class="serif">h6 Serif</h6><br>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium malesuada iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur tincidunt ex ut dictum. Mauris commodo, dolor congue blandit luctus, felis metus aliquet tellus, ut tincidunt turpis ipsum sit amet ex. Suspendisse potenti. Etiam quis tristique lectus, nec mattis odio. Nam cursus ut ante non eleifend. Donec sollicitudin maximus ex, a imperdiet dolor iaculis in. Curabitur sit amet metus et eros mattis ullamcorper et dictum lacus. Curabitur metus diam, ornare consequat malesuada sed, pellentesque a dui. Duis vehicula, nulla eget semper viverra, nisi ante dignissim massa, vel sollicitudin mi diam sit amet leo. Quisque vestibulum volutpat est, nec rutrum mauris molestie maximus. Donec est augue, commodo vel elit non, venenatis molestie nunc.</P><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
+        <h1>Colors</h1>
+        <p>Default, Blog, and Podcast Colors</p>
         <hr>
-        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium malesuada iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur tincidunt ex ut dictum. Mauris commodo, dolor congue blandit luctus, felis metus aliquet tellus, ut tincidunt turpis ipsum sit amet ex. Suspendisse potenti. Etiam quis tristique lectus, nec mattis odio. Nam cursus ut ante non eleifend. Donec sollicitudin maximus ex, a imperdiet dolor iaculis in. Curabitur sit amet metus et eros mattis ullamcorper et dictum lacus. Curabitur metus diam, ornare consequat malesuada sed, pellentesque a dui. Duis vehicula, nulla eget semper viverra, nisi ante dignissim massa, vel sollicitudin mi diam sit amet leo. Quisque vestibulum volutpat est, nec rutrum mauris molestie maximus. Donec est augue, commodo vel elit non, venenatis molestie nunc.</P>
+        <div class="row">
+          <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+            <h2>Default Color</h2>
+            <p>The Default, or Main, color should be used everywhere that is not the blog or the podcast. This includes, but it not limited to, the: home page, about page, contact page, and career page.</p>
+            <div class="row">
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Swatch</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>color: #237BAE</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch main"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Disabled Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button disbaled&quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius disabled">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Links</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;p&gt;This is what an &lt;a href=&quot;#&quot;&gt;inline link&lt;/a&gt; looks like.&lt;/p&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <p>This is what an <a href="#">inline link</a> looks like.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mobility-footer">
@@ -118,7 +189,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>$(document).ready(function() {
+    $('pre code').each(function(i, block) {hljs.highlightBlock(block);});});</script>
     <!-- build:js js/vendor/libraries.min.js-->
     <!-- bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>

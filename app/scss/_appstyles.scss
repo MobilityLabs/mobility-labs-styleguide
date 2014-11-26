@@ -1,6 +1,28 @@
+// Hacks: there might be a way to do this natively in foundation, but I haven't found it yet
+.top-bar-section a {
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+}
+.top-bar .name h1 a {
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+} 
+.button{
+	-webkit-font-smoothing: antialiased;
+}
 /* all app scss styles here */
 .serif{
 	font-family: $font-family-serif;
+}
+//color swatches
+.colorswatch{
+	height: 67px;
+	width: 67px;
+	border-style: solid;
+    border-color: $maindark;
+}
+.main{
+	background: $primary-color;
 }
 
 // Footer
@@ -9,15 +31,19 @@
 	color: $white;
 	font-family: $font-family-sans-serif;	
 	& ul{
+		-webkit-font-smoothing: antialiased;
 		color: $white;
 		font-family: $font-family-sans-serif;	
 		list-style-type: none;
 	}
 	& li{
+		-webkit-font-smoothing: antialiased;
 		color: tint($maindark, 50%);
 		font-family: $font-family-sans-serif;
-		font-weight: $font-weight-bold;
+		//font-weight: $font-weight-bold;
 		& a{
+			-webkit-font-smoothing: antialiased;
+			text-decoration: none;
 			font-weight: $font-weight-normal;
 			color: tint($maindark, 50%);
 			&:hover{

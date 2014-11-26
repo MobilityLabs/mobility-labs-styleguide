@@ -56,7 +56,9 @@
 						i.fa.fa-linkedin.fa-lg
 
 
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>$(document).ready(function() {
+$('pre code').each(function(i, block) {hljs.highlightBlock(block);});});</script>
 // build:js js/vendor/libraries.min.js
 // bower:js
 script(src='bower_components/jquery/dist/jquery.js')

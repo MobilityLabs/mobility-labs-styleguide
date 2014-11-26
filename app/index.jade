@@ -4,23 +4,88 @@ html(class="no-js", lang="en")
     body
         include nav
         .row
-            .small-12.small-centered.medium-10.medium-centered.large-12.large-centered.columns
+            .small-12.small-centered.medium-12.medium-centered.large-12.large-centered.columns
                 h1 Typography
+                p Sans Serif & Serif heading styles, and paragraph styles.
                 hr
+                br
                 h1 h1 Sans serif
                 h2 h2 Sans serif
                 h3 h3 Sans serif
                 h4 h4 Sans serif
                 h5 h5 Sans serif
                 h6 h6 Sans serif
-                hr
+                br
                 h1.serif h1 Serif
                 h2.serif h2 Serif
                 h3.serif h3 Serif
                 h4.serif h4 Serif
                 h5.serif h5 Serif
                 h6.serif h6 Serif
-                hr
+                br
                 P Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium malesuada iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur tincidunt ex ut dictum. Mauris commodo, dolor congue blandit luctus, felis metus aliquet tellus, ut tincidunt turpis ipsum sit amet ex. Suspendisse potenti. Etiam quis tristique lectus, nec mattis odio. Nam cursus ut ante non eleifend. Donec sollicitudin maximus ex, a imperdiet dolor iaculis in. Curabitur sit amet metus et eros mattis ullamcorper et dictum lacus. Curabitur metus diam, ornare consequat malesuada sed, pellentesque a dui. Duis vehicula, nulla eget semper viverra, nisi ante dignissim massa, vel sollicitudin mi diam sit amet leo. Quisque vestibulum volutpat est, nec rutrum mauris molestie maximus. Donec est augue, commodo vel elit non, venenatis molestie nunc.
-                    
+                br
+        .row
+            .small-12.small-centered.medium-12.medium-centered.large-12.large-centered.columns
+                h1 Colors
+                p Default, Blog, and Podcast Colors
+                hr
+                .row
+                    .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                        h2 Default Color
+                        p The Default, or Main, color should be used everywhere that is not the blog or the podcast. This includes, but it not limited to, the: home page, about page, contact page, and career page.
+                        .row
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Swatch
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = 'color: #237BAE'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.main
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button" href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Disabled Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button disbaled" href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius.disabled(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Links
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<p>This is what an <a href="#">inline link</a> looks like.</p>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        p
+                                            | This is what an 
+                                            a(href="#") inline link
+                                            |  looks like.
+
+
         include footer
