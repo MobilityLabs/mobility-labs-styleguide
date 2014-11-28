@@ -16,7 +16,6 @@
     <!-- build:js js/vendor/modernizr.min.js-->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild--><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
   </head>
   <body>
     <div class="fixed contain-to-grid"> 
@@ -67,8 +66,69 @@
     <div class="row">
       <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
         <h1>Colors</h1>
-        <p>Default, Blog, and Podcast Colors</p>
+        <p>Background, Default, Blog, and Podcast Colors</p>
         <hr>
+        <div class="row">
+          <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+            <h2>Background Colors</h2>
+            <p>The background colors for the page.</p>
+            <div class="row">
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Swatches</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$mainblack: #434753;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch mainblack-bg"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$maindark: tint($mainblack, 10%);</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch maindark-bg"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$mainmedium: tint($mainblack, 20%);</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch mainmedium-bg"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$mainlight: tint($mainblack, 90%);</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch mainlight-bg"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$white: #FFFFFF;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch white-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
             <h2>Default Color</h2>
@@ -83,7 +143,7 @@
                   </div>
                   <div class="small-6 medium-6 large-6 columns">
                     <h6>Rendered Code</h6>
-                    <div class="colorswatch main"></div>
+                    <div class="colorswatch main-bg"></div>
                   </div>
                 </div>
               </div>
@@ -127,6 +187,134 @@
                   <div class="small-6 medium-6 large-6 columns">
                     <h6>Rendered Code</h6>
                     <p>This is what an <a href="#">inline link</a> looks like.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+            <h2>Blog Color</h2>
+            <p>The Blog color is to be used for link and button colors exclusively on the blog page and it's child pages.</p>
+            <div class="row">
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Swatch</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$blog: #52B270;</code><br><code>color: $blog;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch blog-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button blog-bg&quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius blog-button">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Disabled Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button blog-bg-disbaled &quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius blog-button-disabled">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Links</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;p&gt;This is what an &lt;a class=&quot;blog-link&quot; href=&quot;#&quot;&gt;inline link&lt;/a&gt; looks like.&lt;/p&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <p>This is what an <a href="#" class="blog-link">inline link</a> looks like.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+            <h2>podcast Color</h2>
+            <p>The podcast color is to be used for link and button colors exclusively on the podcast page and it's child pages.</p>
+            <div class="row">
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Swatch</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>SCSS</h6>
+                    <div class="panel"><code>$podcast: #F29653;</code><br><code>color: $podcast;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="colorswatch podcast-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button podcast-bg&quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius podcast-button">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Disabled Button</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;a class=&quot;button podcast-bg-disbaled &quot; href=&quot;#&quot;&gt; This is a Button &lt;/a&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns"><a href="#" class="button radius podcast-button-disabled">This is a Button</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 small-centered medium-12 medium-centered large-12 columns">
+                <h3 class="subheader">Links</h3>
+                <div class="row">
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>HTML</h6>
+                    <div class="panel"><code>&lt;p&gt;This is what an &lt;a class=&quot;podcast-link&quot; href=&quot;#&quot;&gt;inline link&lt;/a&gt; looks like.&lt;/p&gt;</code></div>
+                  </div>
+                  <div class="small-6 medium-6 large-6 columns">
+                    <h6>Rendered Code</h6>
+                    <p>This is what an <a href="#" class="podcast-link">inline link</a> looks like.</p>
                   </div>
                 </div>
               </div>

@@ -28,8 +28,60 @@ html(class="no-js", lang="en")
         .row
             .small-12.small-centered.medium-12.medium-centered.large-12.large-centered.columns
                 h1 Colors
-                p Default, Blog, and Podcast Colors
+                p Background, Default, Blog, and Podcast Colors
                 hr
+                .row
+                    .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                        h2 Background Colors
+                        p The background colors for the page.
+                        .row
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Swatches
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$mainblack: #434753;'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.mainblack-bg
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$maindark: tint($mainblack, 10%);'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.maindark-bg
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$mainmedium: tint($mainblack, 20%);'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.mainmedium-bg
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$mainlight: tint($mainblack, 90%);'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.mainlight-bg
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$white: #FFFFFF;'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.white-bg
                 .row
                     .small-12.small-centered.medium-12.medium-centered.large-12.columns
                         h2 Default Color
@@ -45,7 +97,7 @@ html(class="no-js", lang="en")
                                                 = 'color: #237BAE'
                                     .small-6.medium-6.large-6.columns
                                         h6 Rendered Code
-                                        .colorswatch.main
+                                        .colorswatch.main-bg
                             .small-12.small-centered.medium-12.medium-centered.large-12.columns
                                 h3.subheader Button
                                 .row
@@ -85,6 +137,124 @@ html(class="no-js", lang="en")
                                         p
                                             | This is what an 
                                             a(href="#") inline link
+                                            |  looks like.
+                .row
+                    .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                        h2 Blog Color
+                        p The Blog color is to be used for link and button colors exclusively on the blog page and it's child pages.
+                        .row
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Swatch
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$blog: #52B270;'
+                                            br
+                                            code
+                                                = 'color: $blog;'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.blog-bg
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button blog-bg" href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius.blog-button(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Disabled Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button blog-bg-disbaled " href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius.blog-button-disabled(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Links
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<p>This is what an <a class="blog-link" href="#">inline link</a> looks like.</p>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        p
+                                            | This is what an 
+                                            a.blog-link(href="#") inline link
+                                            |  looks like.
+                .row
+                    .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                        h2 podcast Color
+                        p The podcast color is to be used for link and button colors exclusively on the podcast page and it's child pages.
+                        .row
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Swatch
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 SCSS
+                                        .panel
+                                            code
+                                                = '$podcast: #F29653;'
+                                            br
+                                            code
+                                                = 'color: $podcast;'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .colorswatch.podcast-bg
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button podcast-bg" href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius.podcast-button(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Disabled Button
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<a class="button podcast-bg-disbaled " href="#"> This is a Button </a>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        .row
+                                            .small-12.medium-12.large-12.columns
+                                                a.button.radius.podcast-button-disabled(href='#') This is a Button
+                            .small-12.small-centered.medium-12.medium-centered.large-12.columns
+                                h3.subheader Links
+                                .row
+                                    .small-6.medium-6.large-6.columns
+                                        h6 HTML
+                                        .panel
+                                            code
+                                                = '<p>This is what an <a class="podcast-link" href="#">inline link</a> looks like.</p>'
+                                    .small-6.medium-6.large-6.columns
+                                        h6 Rendered Code
+                                        p
+                                            | This is what an 
+                                            a.podcast-link(href="#") inline link
                                             |  looks like.
 
 

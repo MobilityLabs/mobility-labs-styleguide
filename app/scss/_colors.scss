@@ -1,0 +1,70 @@
+//color swatches
+$blog: #52B270;
+$podcast: #F29653;
+
+
+.colorswatch{
+	height: 67px;
+	width: 67px;
+	border-style: dashed;
+	border-width: 2px;
+	border-color: black;
+}
+.main-bg{
+	background-color: $primary-color;
+}
+.mainblack-bg{
+	background-color:$mainblack;
+}
+.maindark-bg{
+	background-color: $maindark;
+}
+.mainmedium-bg{
+	background-color: $mainmedium;
+}
+.mainlight-bg{
+	background-color: $mainlight;
+}
+.white-bg{
+	background-color: $white;
+}
+
+
+//Blog
+
+.blog-bg{
+	background-color: $blog;
+}
+
+.blog-button {
+  @include button( rem-calc(12), $blog
+  );
+}
+
+.blog-button-disabled {
+  @include button( rem-calc(12), $blog, $disabled:true
+  );
+}
+.blog-link{
+	color: $blog;
+}
+
+// Podcast
+
+.podcast-bg{
+	background-color: $podcast;
+}
+
+.podcast-button{
+@include button( rem-calc(12), $podcast
+  );
+}
+
+.podcast-button-disabled {
+  @include button( rem-calc(12), $podcast, $disabled:true
+  );
+}
+
+.podcast-link{
+	color: $podcast;
+}

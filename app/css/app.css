@@ -6285,6 +6285,161 @@ th.hide-for-touch {
     display: table-cell !important; }
  }
 
+.colorswatch {
+  height: 67px;
+  width: 67px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: black; }
+
+.main-bg {
+  background-color: #557EBF; }
+
+.mainblack-bg {
+  background-color: #434753; }
+
+.maindark-bg {
+  background-color: #555964; }
+
+.mainmedium-bg {
+  background-color: #686b75; }
+
+.mainlight-bg {
+  background-color: #ececed; }
+
+.white-bg {
+  background-color: #FFFFFF; }
+
+.blog-bg {
+  background-color: #52B270; }
+
+.blog-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.5rem;
+  background-color: #52B270;
+  border-color: #409059;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out; }
+  .blog-button:hover, .blog-button:focus {
+    background-color: #409059; }
+  .blog-button:hover, .blog-button:focus {
+    color: #FFFFFF; }
+
+.blog-button-disabled {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.5rem;
+  background-color: #52B270;
+  border-color: #409059;
+  color: #FFFFFF;
+  cursor: default;
+  opacity: 0.7;
+  box-shadow: none;
+  transition: background-color 300ms ease-out; }
+  .blog-button-disabled:hover, .blog-button-disabled:focus {
+    background-color: #409059; }
+  .blog-button-disabled:hover, .blog-button-disabled:focus {
+    color: #FFFFFF; }
+  .blog-button-disabled:hover, .blog-button-disabled:focus {
+    background-color: #52B270; }
+
+.blog-link {
+  color: #52B270; }
+
+.podcast-bg {
+  background-color: #F29653; }
+
+.podcast-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.5rem;
+  background-color: #F29653;
+  border-color: #ed7117;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out; }
+  .podcast-button:hover, .podcast-button:focus {
+    background-color: #ed7117; }
+  .podcast-button:hover, .podcast-button:focus {
+    color: #FFFFFF; }
+
+.podcast-button-disabled {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.5rem;
+  background-color: #F29653;
+  border-color: #ed7117;
+  color: #FFFFFF;
+  cursor: default;
+  opacity: 0.7;
+  box-shadow: none;
+  transition: background-color 300ms ease-out; }
+  .podcast-button-disabled:hover, .podcast-button-disabled:focus {
+    background-color: #ed7117; }
+  .podcast-button-disabled:hover, .podcast-button-disabled:focus {
+    color: #FFFFFF; }
+  .podcast-button-disabled:hover, .podcast-button-disabled:focus {
+    background-color: #F29653; }
+
+.podcast-link {
+  color: #F29653; }
+
 .top-bar-section a {
   text-decoration: none;
   -webkit-font-smoothing: antialiased; }
@@ -6299,15 +6454,6 @@ th.hide-for-touch {
 /* all app scss styles here */
 .serif {
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif; }
-
-.colorswatch {
-  height: 67px;
-  width: 67px;
-  border-style: solid;
-  border-color: #555964; }
-
-.main {
-  background: #557EBF; }
 
 .mobility-footer-top {
   background: #555964;
